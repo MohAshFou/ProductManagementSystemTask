@@ -1,0 +1,49 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\ITI\\ITI\\Tasks\\ProductManagementSystemِAPITask\\ProductManagementSystemِAPITask\\wwwroot\\Images\\0abcce5a-fb61-445c-a883-be1ef8c3fb6d.jpg",
+      "PackagePath": "staticwebassets\\Images\\0abcce5a-fb61-445c-a883-be1ef8c3fb6d.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\ITI\\Tasks\\ProductManagementSystemِAPITask\\ProductManagementSystemِAPITask\\wwwroot\\Images\\1c330e77-90b0-46a4-99dc-0c85ade2bacb.jpg",
+      "PackagePath": "staticwebassets\\Images\\1c330e77-90b0-46a4-99dc-0c85ade2bacb.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\ITI\\Tasks\\ProductManagementSystemِAPITask\\ProductManagementSystemِAPITask\\wwwroot\\Images\\1fc0669b-066c-4569-b974-743f26b44f94.jpg",
+      "PackagePath": "staticwebassets\\Images\\1fc0669b-066c-4569-b974-743f26b44f94.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\ITI\\Tasks\\ProductManagementSystemِAPITask\\ProductManagementSystemِAPITask\\wwwroot\\Images\\2cf8ae48-2b4f-40ce-970a-ed20c56393ab.jpg",
+      "PackagePath": "staticwebassets\\Images\\2cf8ae48-2b4f-40ce-970a-ed20c56393ab.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\ITI\\Tasks\\ProductManagementSystemِAPITask\\ProductManagementSystemِAPITask\\wwwroot\\Images\\81c50409-49b5-43e3-ae71-cefe832185b9.jpg",
+      "PackagePath": "staticwebassets\\Images\\81c50409-49b5-43e3-ae71-cefe832185b9.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\ITI\\Tasks\\ProductManagementSystemِAPITask\\ProductManagementSystemِAPITask\\wwwroot\\Images\\8b069696-a7a6-4808-aa66-dddc144f6bc1.jpg",
+      "PackagePath": "staticwebassets\\Images\\8b069696-a7a6-4808-aa66-dddc144f6bc1.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\ITI\\Tasks\\ProductManagementSystemِAPITask\\ProductManagementSystemِAPITask\\wwwroot\\Images\\dfe1605c-79aa-440d-90fa-e7a33c85d81f.jpg",
+      "PackagePath": "staticwebassets\\Images\\dfe1605c-79aa-440d-90fa-e7a33c85d81f.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ProductManagementSystemِAPITask.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.ProductManagementSystemِAPITask.props",
+      "PackagePath": "build\\ProductManagementSystemِAPITask.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.ProductManagementSystemِAPITask.props",
+      "PackagePath": "buildMultiTargeting\\ProductManagementSystemِAPITask.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.ProductManagementSystemِAPITask.props",
+      "PackagePath": "buildTransitive\\ProductManagementSystemِAPITask.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

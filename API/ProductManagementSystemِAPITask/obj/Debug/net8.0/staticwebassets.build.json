@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "XvQcM1TnDosdi/JAc02VNg0MyZCs5p7CGOoCtjrBxHU=",
+  "Source": "ProductManagementSystemِAPITask",
+  "BasePath": "_content/ProductManagementSystemِAPITask",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "ProductManagementSystemِAPITask\\wwwroot",
+      "Source": "ProductManagementSystemِAPITask",
+      "ContentRoot": "D:\\ITI\\ITI\\Tasks\\ProductManagementSystem-Task\\API\\ProductManagementSystemِAPITask\\wwwroot\\",
+      "BasePath": "_content/ProductManagementSystemِAPITask",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}
