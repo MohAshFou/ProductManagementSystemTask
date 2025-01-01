@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProductManagementSystemِAPITask")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+af337bf2b95799b942d59c2203f6942022c2188d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5242e2347444e017fd750555e8cb1f114d94edde")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProductManagementSystemِAPITask")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProductManagementSystemِAPITask")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

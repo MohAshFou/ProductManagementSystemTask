@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ITI\\ITI\\Tasks\\ProductManagementSystem-Task\\API\\ProductManagementSystemِAPITask\\ProductManagementSystemِAPITask.csproj": {}
+    "D:\\ITI\\ITI\\Tasks\\ProductManagementSystemTask\\API\\ProductManagementSystemِAPITask\\ProductManagementSystemِAPITask.csproj": {}
   },
   "projects": {
-    "D:\\ITI\\ITI\\Tasks\\ProductManagementSystem-Task\\API\\ProductManagementSystemِAPITask\\ProductManagementSystemِAPITask.csproj": {
+    "D:\\ITI\\ITI\\Tasks\\ProductManagementSystemTask\\API\\ProductManagementSystemِAPITask\\ProductManagementSystemِAPITask.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ITI\\ITI\\Tasks\\ProductManagementSystem-Task\\API\\ProductManagementSystemِAPITask\\ProductManagementSystemِAPITask.csproj",
+        "projectUniqueName": "D:\\ITI\\ITI\\Tasks\\ProductManagementSystemTask\\API\\ProductManagementSystemِAPITask\\ProductManagementSystemِAPITask.csproj",
         "projectName": "ProductManagementSystemِAPITask",
-        "projectPath": "D:\\ITI\\ITI\\Tasks\\ProductManagementSystem-Task\\API\\ProductManagementSystemِAPITask\\ProductManagementSystemِAPITask.csproj",
+        "projectPath": "D:\\ITI\\ITI\\Tasks\\ProductManagementSystemTask\\API\\ProductManagementSystemِAPITask\\ProductManagementSystemِAPITask.csproj",
         "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "D:\\ITI\\ITI\\Tasks\\ProductManagementSystem-Task\\API\\ProductManagementSystemِAPITask\\obj\\",
+        "outputPath": "D:\\ITI\\ITI\\Tasks\\ProductManagementSystemTask\\API\\ProductManagementSystemِAPITask\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -50,6 +50,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "AspNetCoreRateLimit": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
             "FastEndpoints": {
               "target": "Package",
               "version": "[5.33.0, )"

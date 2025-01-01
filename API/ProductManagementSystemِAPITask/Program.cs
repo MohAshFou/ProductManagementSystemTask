@@ -6,6 +6,7 @@ using ProductManagementSystemِAPITask.Data;
 using ProductManagementSystemِAPITask.Services;
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.Annotations;
+using AspNetCoreRateLimit;
 
 namespace ProductManagementSystemِAPITask
 {
@@ -37,11 +38,29 @@ namespace ProductManagementSystemِAPITask
 
             builder.Services.AddFastEndpoints();
 
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowMultipleOrigins", policy =>
+                {
+                    policy.WithOrigins("http://localhost:4200", "http://localhost:53043")
+                          .AllowAnyHeader()
+                          .AllowAnyMethod()
+                          .AllowCredentials();
+                });
+            });
 
 
+            // add RateLimit
 
-            // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-            builder.Services.AddEndpointsApiExplorer();
+            builder.Services.AddMemoryCache();
+
+            builder.Services.Configure<IpRateLimitOptions>(builder.Configuration.GetSection("IpRateLimiting"));
+            builder.Services.Configure<IpRateLimitPolicies>(builder.Configuration.GetSection("IpRateLimitPolicies"));
+            builder.Services.AddSingleton<IRateLimitConfiguration, RateLimitConfiguration>();
+            builder.Services.AddInMemoryRateLimiting();
+
+
+                  builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
             var app = builder.Build();
@@ -52,13 +71,14 @@ namespace ProductManagementSystemِAPITask
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
+            app.UseCors("AllowMultipleOrigins");
             app.UseStaticFiles();
             app.UseHttpsRedirection();
 
-          //  app.UseAuthorization();
+            //  app.UseAuthorization();
 
-
-     //       app.MapControllers();
+            app.UseIpRateLimiting();
+            //       app.MapControllers();
             app.UseFastEndpoints();
 
             app.Run();
