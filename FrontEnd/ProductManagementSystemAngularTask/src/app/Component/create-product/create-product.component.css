@@ -1,0 +1,75 @@
+/* General form container */
+.form-container {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for form fields */
+.field {
+  margin-bottom: 16px;
+}
+
+/* Labels */
+.label {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+/* Input fields */
+.input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.input:focus {
+  border-color: #4f92f3;
+  outline: none;
+}
+
+/* Error message styling */
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+/* Button containers */
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+/* Submit button */
+.submit-btn {
+  background-color: #28a745;
+  color: white;
+  width: 48%;
+}
+
+.submit-btn:disabled {
+  background-color: #ccc;
+}
+
+/* Back button */
+.back-btn {
+  background-color: #343a40;
+  color: white;
+  width: 48%;
+}
+
+/* File upload container */
+.file-upload {
+  width: 100%;
+}

@@ -1,0 +1,54 @@
+<p-toast></p-toast>
+
+<form [formGroup]="productForm" (ngSubmit)="onSubmit()" class="form-container">
+  <!-- Name Field -->
+  <div class="form-field">
+    <label for="name" class="label">Name</label>
+    <input id="name" formControlName="name" type="text" pInputText class="input" />
+    <div *ngIf="productForm.get('name')?.invalid && productForm.get('name')?.touched" class="error-message">
+      Name is required (max 100 characters)
+    </div>
+  </div>
+
+  <!-- Description Field -->
+  <div class="form-field">
+    <label for="description" class="label">Description</label>
+    <textarea id="description" formControlName="description" pInputTextarea class="input"></textarea>
+    <div *ngIf="productForm.get('description')?.invalid && productForm.get('description')?.touched"
+      class="error-message">
+      Description is required (max 500 characters)
+    </div>
+  </div>
+
+  <!-- Price Field -->
+  <div class="form-field">
+    <label for="price" class="label">Price</label>
+    <p-inputNumber inputId="price" formControlName="price" [min]="0" mode="currency" currency="USD" locale="en-US"
+      class="input"></p-inputNumber>
+    <div *ngIf="productForm.get('price')?.invalid && productForm.get('price')?.touched" class="error-message">
+      Price must be a positive number
+    </div>
+  </div>
+
+  <!-- Image Field -->
+  <div class="form-field">
+    <label for="image" class="label">Image</label>
+    <div *ngIf="currentImage" class="image-preview">
+      <img [src]="currentImage" alt="Current Image" class="image-thumbnail" />
+      <button type="button" (click)="clearImage()" class="clear-button">Clear Image</button>
+    </div>
+
+    <p-fileUpload name="image" (onSelect)="onFileSelect($event)" mode="basic" accept="image/*" maxFileSize="1000000"
+      class="file-upload" [disabled]="imageChanged"></p-fileUpload>
+    <div *ngIf="!imageChanged && productForm.get('image')?.touched" class="error-message">
+      Please select a valid image file (JPG, PNG, etc.)
+    </div>
+  </div>
+
+  <!-- Submit Button -->
+  <button type="submit" [disabled]="productForm.invalid || !imageChanged" pButton label="Update Product"
+    class="btn btn-primary"></button>
+</form>
+
+<!-- Back Button -->
+<button pButton label="Back" class="btn btn-dark" severity="contrast" (click)="back()" class="back-button"></button>

@@ -1,0 +1,27 @@
+<p-toast></p-toast>
+
+<p-card [style]="{ width: '100%', maxWidth: '600px', overflow: 'hidden', margin: '0 auto' }">
+  <ng-template #header>
+    <img alt="Card" class="card-image" [src]="proudectDetials.urlImageProduct" />
+  </ng-template>
+
+  <ng-template #title>
+    <h2 class="card-title">{{ proudectDetials.name }}</h2>
+  </ng-template>
+
+  <p class="card-description">
+    {{ proudectDetials.description }}
+  </p>
+
+  <ng-template #footer>
+    <div class="card-footer">
+      <div class="price-date">
+        <span class="price">Price: {{ proudectDetials.price | currency }}</span>
+        <span class="created-date">Created Date: {{ proudectDetials.createdDate | date }}</span>
+      </div>
+      <div class="back-button">
+        <button pButton label="Back" class="btn btn-dark" severity="contrast" (click)="back()"></button>
+      </div>
+    </div>
+  </ng-template>
+</p-card>

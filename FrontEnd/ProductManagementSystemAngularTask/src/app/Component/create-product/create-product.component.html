@@ -1,0 +1,46 @@
+<p-toast></p-toast>
+
+<form [formGroup]="productForm" (ngSubmit)="onSubmit()" class="form-container">
+
+  <!-- Name Field -->
+  <div class="field">
+    <label for="name" class="label">Name</label>
+    <input id="name" formControlName="name" type="text" pInputText class="input" />
+    <div *ngIf="productForm.get('name')?.invalid && productForm.get('name')?.touched" class="error-message">
+      Name is required (max 100 characters)
+    </div>
+  </div>
+
+  <!-- Description Field -->
+  <div class="field">
+    <label for="description" class="label">Description</label>
+    <textarea id="description" formControlName="description" pInputTextarea class="input"></textarea>
+    <div *ngIf="productForm.get('description')?.invalid && productForm.get('description')?.touched" class="error-message">
+      Description is required (max 500 characters)
+    </div>
+  </div>
+
+  <!-- Price Field -->
+  <div class="field">
+    <label for="price" class="label">Price</label>
+    <p-inputNumber inputId="price" formControlName="price" [min]="0" mode="currency" currency="USD" locale="en-US" class="input"></p-inputNumber>
+    <div *ngIf="productForm.get('price')?.invalid && productForm.get('price')?.touched" class="error-message">
+      Price must be a positive number
+    </div>
+  </div>
+
+  <!-- Image Field -->
+  <div class="field">
+    <label for="image" class="label">Image</label>
+    <p-fileUpload name="image" (onSelect)="onFileSelect($event)" mode="basic" accept="image/*" maxFileSize="1000000" class="file-upload"></p-fileUpload>
+    <div *ngIf="productForm.get('image')?.invalid && productForm.get('image')?.touched" class="error-message">
+      Image is required
+    </div>
+  </div>
+
+  <!-- Buttons -->
+  <div class="buttons-container">
+    <button type="submit" [disabled]="productForm.invalid" pButton label="Create Product" class="submit-btn"></button>
+    <button pButton label="Back" class="back-btn" severity="contrast" (click)="back()"></button>
+  </div>
+</form>

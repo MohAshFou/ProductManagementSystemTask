@@ -1,0 +1,112 @@
+
+p-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+/* Card image styling */
+.card-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  max-height: 25%;
+  margin-bottom: 12px;
+}
+
+
+/* Title styling */
+.card-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 16px;
+  color: #333;
+  text-align: center;
+}
+
+/* Description styling */
+.card-description {
+  font-size: 14px;
+  color: #555;
+  margin-top: 12px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* Footer styling */
+.card-footer {
+  margin-top: 16px;
+  padding-bottom: 16px;
+  border-top: 1px solid #e0e0e0;
+  padding-top: 8px;
+}
+
+/* Price and created date styling */
+.price-date {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;  /* Added space between price/date and back button */
+}
+
+/* Price styling */
+.price {
+  font-size: 16px;
+  font-weight: 600;
+  color: #2d2d2d;
+}
+
+/* Created date styling */
+.created-date {
+  font-size: 14px;
+  color: #888;
+}
+
+/* Button styling inside footer */
+.back-button {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* Button styling */
+.btn {
+  width: 100%;
+  max-width: 200px;  /* Limiting max-width for buttons */
+  padding: 8px 16px;
+  text-align: center;
+}
+
+/* Ensure the card container is responsive */
+@media screen and (max-width: 768px) {
+  p-card {
+    width: 100%;
+    margin: 10px;
+  }
+  .card-title {
+    font-size: 20px;
+  }
+  .card-description {
+    font-size: 12px;
+  }
+  .price, .created-date {
+    font-size: 14px;
+    color: white;
+  }
+}
+
+
+
+
+
+
+
+/* back styling */
+.back-btn {
+  background-color: #343a40;
+  color: white;
+  width: 48%;
+}
+
